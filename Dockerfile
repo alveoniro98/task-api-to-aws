@@ -6,5 +6,5 @@ RUN CGO_ENABLED=0 GOOS=linux go build -trimpath -ldflags="-s -w" -o /task-api .
 FROM gcr.io/distroless/static-debian12:nonroot
 COPY --from=build /task-api /task-api
 EXPOSE 8080
-USER nonroot:nonroot
+USER 65532:65532
 ENTRYPOINT ["/task-api"]
