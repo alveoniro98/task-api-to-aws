@@ -40,10 +40,10 @@ module "eks" {
   }
   eks_managed_node_groups = {
     demo = {
-      instance_types = ["t3.medium"]
+      instance_types = ["t3.small"]
       ami_type       = "AL2023_x86_64_STANDARD"
-      min_size       = 2
-      max_size       = 3
+      min_size       = 1
+      max_size       = 2
       desired_size   = 2
     }
   }
@@ -88,7 +88,9 @@ data "aws_iam_policy_document" "github_trust" {
     condition {
       test     = "StringEquals"
       variable = "token.actions.githubusercontent.com:sub"
-      values   = ["repo:${var.github_repository}:ref:refs/heads/main"]
+      values = [
+        "repo:alveoniro98@323129575/task-api-to-aws@1424380618:ref:refs/heads/main"
+      ]
     }
   }
 }
