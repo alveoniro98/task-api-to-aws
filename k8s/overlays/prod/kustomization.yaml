@@ -5,4 +5,4 @@ resources:
 images:
   - name: task-api
     newName: 366656139758.dkr.ecr.ap-southeast-3.amazonaws.com/yassir-task-demo
-    newTag: 5d99c2217dd20622d1e0c7325b3359ca506998b2
+    newTag: a2884ba679982e7cbb02ce835716bc7b08522b7c
