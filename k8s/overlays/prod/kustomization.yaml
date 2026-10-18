@@ -4,5 +4,5 @@ resources:
   - ../../base
 images:
   - name: task-api
-    newName: REPLACE_WITH_ECR_REPOSITORY_URL
-    newTag: bootstrap
+    newName: 366656139758.dkr.ecr.ap-southeast-3.amazonaws.com/yassir-task-demo
+    newTag: 5d99c2217dd20622d1e0c7325b3359ca506998b2
